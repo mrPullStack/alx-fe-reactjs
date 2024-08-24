@@ -1,3 +1,6 @@
+import React from 'react';
+import ProfilePage from './components/ProfilePage';
+import UserContext from './UserContext';
 import WelcomeMessage from './components/WelcomeMessage'
 import Header from './components/Header'
 import MainContent from './components/MainContent'
