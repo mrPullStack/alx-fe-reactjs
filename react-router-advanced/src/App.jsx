@@ -5,6 +5,7 @@ import Blogpost from './components/Blogpost';
 import ProtectedRoute from './assets/components/ProtectedRoute';
 
 function App() {
+  const isLoggedin = true;
   return (
     <Router>
       <Routes>
