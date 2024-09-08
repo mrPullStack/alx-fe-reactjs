@@ -3,6 +3,12 @@ import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import TodoList from '../components/TodoList';
 
+test('renders the todo list component', () => {
+    render(<TodoList />);
+    const element = screen.getByText(/todo list/i);
+    expect(element).toBeInTheDocument();
+});
+
 test('renders initial todo items', () => {
     render(<TodoList />);
     expect(screen.getByText('Learn React')).toBeInTheDocument();
