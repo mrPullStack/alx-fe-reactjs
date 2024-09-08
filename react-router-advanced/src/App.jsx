@@ -6,6 +6,7 @@ import ProtectedRoute from './assets/components/ProtectedRoute';
 
 function App() {
   const isLoggedin = true;
+
   return (
     <Router>
       <Routes>
@@ -18,7 +19,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/posts/:postId" element={<Blogpost />} />
+        <Route path="/blog/:id" element={<Blogpost />} />
       </Routes>
     </Router>
   );
