@@ -7,6 +7,18 @@ function TodoList() {
     ]);
     const [newTodo, setNewTodo] = useState('');
 
+    const TodoList = () => {
+        return (
+            <div>
+                <h1>Todo List</h1>
+                <ul>
+                <li>Task 1</li>
+                <li>Task 2</li>
+                </ul>
+            </div>
+            );
+        };
+
     const addTodo = () => {
         if (newTodo.trim()) {
         setTodos([...todos, { id: Date.now(), text: newTodo, completed: false }]);

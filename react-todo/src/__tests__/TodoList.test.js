@@ -1,12 +1,19 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import TodoList from '../components/TodoList';
 
-test('renders the todo list component', () => {
+// test('renders the todo list component', () => {
+//     render(<TodoList />);
+//     const element = screen.getByText(/todo list/i);
+//     expect(element).toBeInTheDocument();
+// });
+
+test('renders the TodoList component', () => {
     render(<TodoList />);
-    const element = screen.getByText(/todo list/i);
-    expect(element).toBeInTheDocument();
+    const headingElement = screen.getByText(/todo list/i);
+    expect(headingElement).toBeInTheDocument();
 });
 
 test('renders initial todo items', () => {
