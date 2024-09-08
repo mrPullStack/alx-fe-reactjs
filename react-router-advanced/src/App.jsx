@@ -19,7 +19,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/blog/:id" element={<Blogpost />} />
+        {/* <Route path="/blog/:id" element={<Blogpost />} /> */}
       </Routes>
     </Router>
   );
