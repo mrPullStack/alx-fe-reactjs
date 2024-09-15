@@ -52,8 +52,8 @@ function AddRecipeForm() {
     };
 
     return (
-        <div className="max-w-lg mx-auto my-8 p-8 bg-gray-100 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-center mb-6">Add a New Recipe</h1>
+        <div className="max-w-lg mx-auto my-8 p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg">
+        <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">Add a New Recipe</h1>
 
         <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -63,7 +63,7 @@ function AddRecipeForm() {
             <input
                 type="text"
                 id="title"
-                className={`w-full p-2 border ${errors.title ? 'border-red-500' : 'border-gray-300'} rounded-lg`}
+                className={`w-full p-2 border ${errors.title ? 'border-red-500' : 'border-gray-300'} rounded-lg md:text-lg`}
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="Enter the recipe title"
@@ -77,7 +77,7 @@ function AddRecipeForm() {
             </label>
             <textarea
                 id="ingredients"
-                className={`w-full p-2 border ${errors.ingredients ? 'border-red-500' : 'border-gray-300'} rounded-lg`}
+                className={`w-full p-2 border ${errors.ingredients ? 'border-red-500' : 'border-gray-300'} rounded-lg md:text-lg`}
                 value={ingredients}
                 onChange={(e) => setIngredients(e.target.value)}
                 placeholder="Enter ingredients separated by commas"
@@ -92,7 +92,7 @@ function AddRecipeForm() {
             </label>
             <textarea
                 id="steps"
-                className={`w-full p-2 border ${errors.steps ? 'border-red-500' : 'border-gray-300'} rounded-lg`}
+                className={`w-full p-2 border ${errors.steps ? 'border-red-500' : 'border-gray-300'} rounded-lg md:text-lg`}
                 value={steps}
                 onChange={(e) => setSteps(e.target.value)}
                 placeholder="Enter the preparation steps"
@@ -103,7 +103,7 @@ function AddRecipeForm() {
 
             <button
             type="submit"
-            className="w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300"
+            className="w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 md:p-4"
             >
             Add Recipe
             </button>
