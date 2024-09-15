@@ -23,7 +23,11 @@ function RecipeDetail() {
     return (
         <div className="container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">{recipe.title}</h1>
-        <img src={recipe.image} alt={recipe.title} className="w-full h-64 object-cover rounded-lg mb-6" />
+        <img
+            src={recipe.image} 
+            alt={recipe.title} 
+            className="w-full h-64 object-cover rounded-lg mb-6" 
+        />
         <h2 className="text-2xl font-semibold mb-4">Ingredients</h2>
         <ul className="list-disc list-inside mb-6">
             {/* Sample ingredients data */}
