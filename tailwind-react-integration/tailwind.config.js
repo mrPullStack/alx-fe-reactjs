@@ -1,3 +1,12 @@
+
+// export default {
+//   content: [],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false,
@@ -5,3 +14,4 @@ module.exports = {
   variants: { extend: {} },
   plugins: [],
 };
+
