@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
+const Search = ({ onSearch }) => {
     const [username, setUsername] = useState('');
 
     // Handle form submission
