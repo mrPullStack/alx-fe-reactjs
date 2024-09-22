@@ -42,7 +42,7 @@ const Search = () => {
         {loading && <p>Loading...</p>}
 
         {/* Display error state */}
-        {error && <p>Looks like we can't find the user</p>}
+        {error && <p>Looks like we cant find the user</p>}
 
         {/* Display fetched user data */}
         {userData && (
