@@ -1,11 +1,15 @@
 import React from 'react';
+import SearchBar from './components/SearchBar';
+import UserList from './components/UserList';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>GitHub User Search App</h1>
+    <div>
+      <h1>GitHub User Search</h1>
+      <SearchBar />
+      <UserList />
     </div>
   );
-}
+};
 
 export default App;
