@@ -14,7 +14,7 @@ export const fetchUserData = async (username) => {
     }
     
     if (repos) {
-        query += `+repos:${repos}`;
+        query += `+repos:${minRepos}`;
     }
 
     try {
